@@ -25,7 +25,7 @@
         "2": {
           "type": "x-qradar",
           "qid": 5000910,
-          "log_source_id": "fced4489-c808-4ece-a327-12b07f089d9b",
+          "log_source_id": 6,
           "category_id": [
             [
               3124
