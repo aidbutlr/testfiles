@@ -63,7 +63,7 @@
           "src_ref": "5",
           "dst_ref": "8",
           "protocols": [
-            255
+            "http"
           ]
         },
         "8": {
