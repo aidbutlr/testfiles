@@ -1,0 +1,79 @@
+{
+  "type": "bundle",
+  "id": "bundle--5477a9a3-8168-4860-aeb4-cbbb8840ca8f",
+  "spec_version": "2.0",
+  "objects": [
+    {
+      "type": "identity",
+      "id": "identity--ef18f1e7-86f3-4c47-8212-e82855df5278",
+      "identity_class": "system",
+      "name": "osprey_storage",
+      "created": "2021-10-22T12:02:20.086Z",
+      "modified": "2021-10-22T12:02:20.086Z"
+    },
+    {
+      "id": "observed-data--2c93e6db-d1ba-48c4-99b8-245da0f2dd18",
+      "type": "observed-data",
+      "created_by_ref": "identity--ef18f1e7-86f3-4c47-8212-e82855df5278",
+      "created": "2021-10-22T12:02:20.237Z",
+      "modified": "2021-10-22T12:02:20.237Z",
+      "objects": {
+        "0": {
+          "type": "artifact",
+          "payload_bin": "PDEzPlNlcCAyOCAxNzozODoyNyB0ZXN0V2luZG93c1NlcnZlciBBZ2VudERldmljZT1XaW5kb3dzTG9nCUFnZW50TG9nRmlsZT1TZWN1cml0eQlTb3VyY2U9TWljcm9zb2Z0LVdpbmRvd3MtU2VjdXJpdHktQXVkaXRpbmcJQ29tcHV0ZXI9U1YtV2luMms4LTAxLmRlbW9sYWJzLmNvLnVrCU9yaWdpbmF0aW5nQ29tcHV0ZXI9MTAuMS4xLjE1CVVzZXI9IAlEb21haW49IAlFdmVudElEPTQ3NDAJRXZlbnRJRENvZGU9NDc0MAlFdmVudFR5cGU9OAlFdmVudENhdGVnb3J5PTEzODI0CVJlY29yZE51bWJlcj01MDQzODEJVGltZUdlbmVyYXRlZD0xMjU0MTU1OTA1CVRpbWVXcml0dGVuPTEyNTQxNTU5MDUJTWVzc2FnZT1BIHVzZXIgYWNjb3VudCB3YXMgbG9ja2VkIG91dC4gIFN1YmplY3Q6ICBTZWN1cml0eSBJRDogIE5UIEFVVEhPUklUWVxTWVNURU0gIEFjY291bnQgTmFtZTogIFNWLVdJTjJLOC0wMSQgIEFjY291bnQgRG9tYWluOiAgREVNT0xBQlMgIExvZ29uIElEOiAgMHgzZTcgIEFjY291bnQgVGhhdCBXYXMgTG9ja2VkIE91dDogIFNlY3VyaXR5IElEOiAgREVNT0xBQlNcQWRtaW5pc3RyYXRvciAgQWNjb3VudCBOYW1lOiAgQWRtaW5pc3RyYXRvciAgQWRkaXRpb25hbCBJbmZvcm1hdGlvbjogIENhbGxlciBDb21wdXRlciBOYW1lOiBTVi1XSU4ySzgtMDEK"
+        },
+        "1": {
+          "type": "x-oca-event",
+          "original_ref": "0",
+          "user_ref": "4",
+          "network_ref": "6",
+          "action": 12,
+          "code": "4740",
+          "outcome": "Success Audit"
+        },
+        "2": {
+          "type": "x-qradar",
+          "qid": 5000910,
+          "log_source_id": "fced4489-c808-4ece-a327-12b07f089d9b",
+          "category_id": [
+            [
+              3124
+            ]
+          ]
+        },
+        "3": {
+          "type": "x-ibm-finding",
+          "start": "2009-09-28T16:38:25.000Z",
+          "src_application_user_ref": "4",
+          "src_ip_ref": "5",
+          "dst_ip_ref": "8",
+          "end": "2021-10-21T23:23:00.115Z",
+          "severity": 1
+        },
+        "4": {
+          "type": "user-account",
+          "user_id": "Administrator"
+        },
+        "5": {
+          "type": "ipv4-addr",
+          "value": "10.1.1.15"
+        },
+        "6": {
+          "type": "network-traffic",
+          "src_ref": "5",
+          "dst_ref": "8",
+          "protocols": [
+            255
+          ]
+        },
+        "8": {
+          "type": "ipv4-addr",
+          "value": "10.1.1.15"
+        }
+      },
+      "first_observed": "2009-09-28T16:38:25.000Z",
+      "last_observed": "2021-10-21T23:23:00.115Z",
+      "number_observed": 1
+    }
+  ]
+}
