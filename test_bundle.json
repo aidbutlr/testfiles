@@ -62,6 +62,8 @@
           "type": "network-traffic",
           "src_ref": "5",
           "dst_ref": "8",
+          "src_port": 80,
+          "dst_port": 80,
           "protocols": [
             "http"
           ]
