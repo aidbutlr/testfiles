@@ -1,6 +1,6 @@
 {
 	'type': 'bundle',
-	'id': 'bundle--11f2383c-cf3f-49b4-a27f-883ffaa72d26',
+	'id': 'bundle--99c9425e-f006-449e-ad0c-a9599e90755b',
 	'spec_version': '2.0',
 	'objects': [{
 		'type': 'identity',
@@ -10,18 +10,15 @@
 		'created': '2021-09-24T15:56:39.537Z',
 		'modified': '2021-09-24T15:56:39.537Z'
 	}, {
-		'id': 'observed-data--3dea1110-2cf9-483e-bbd3-ab06ffc42b8f',
+		'id': 'observed-data--ca39dbbb-33ac-445d-926d-164d22b52ab6',
 		'type': 'observed-data',
 		'created_by_ref': 'identity--69ae6aa8-8b23-4653-806d-18a53aa1d5f8',
-		'created': '2022-02-14T17:28:27.815Z',
-		'modified': '2022-02-14T17:28:27.815Z',
+		'created': '2022-02-14T17:38:26.786Z',
+		'modified': '2022-02-14T17:38:26.786Z',
 		'objects': {
 			'0': {
 				'type': 'artifact',
-				'payload_bin': 'c29tZV9zdHJpbmdfcGF5bG9hZA==',
-				'mime_type': 'application/json',
-				'encryption_algorithm': 'some_string_artifact___encryption_algorithm',
-				'decryption_key': 'some_string_artifact___decryption_key'
+				'payload_bin': 'c29tZV9zdHJpbmdfcGF5bG9hZA=='
 			},
 			'1': {
 				'type': 'x-oca-event',
@@ -44,62 +41,6 @@
 				'credibility': 1
 			},
 			'4': {
-				'type': 'autonomous-system',
-				'name': 'some_string_autonomous_system___name',
-				'rir': 'some_string_autonomous_system___rir'
-			},
-			'5': {
-				'type': 'directory',
-				'path': '\\/some_dir\\/',
-				'path_enc': 'some_string_directory___path_enc',
-				'ctime': '1644597430670',
-				'mtime': '1644597430670',
-				'atime': '1644597430670',
-				'contains_refs': 'some_string_directory___contains_refs'
-			},
-			'7': {
-				'type': 'email-addr',
-				'value': 'test@company.com',
-				'display_name': 'some_string_email_addr___display_name',
-				'belongs_to_ref': 'some_string_email_addr___belongs_to_ref'
-			},
-			'8': {
-				'type': 'email-message',
-				'date': '1',
-				'content_type': 'some_string_email_message___content_type',
-				'from_ref': 'some_string_email_message___from_ref',
-				'sender_ref': 'some_string_email_message___sender_ref',
-				'to_refs': 'some_string_email_message___to_refs',
-				'cc_refs': 'some_string_email_message___cc_refs',
-				'bcc_refs': 'some_string_email_message___bcc_refs',
-				'message_id': 'some_string_email_message___message_id',
-				'subject': 'some_string_email_message___subject',
-				'received_lines': 'some_string_email_message___received_lines',
-				'additional_header_fields': 'some_string_email_message___additional_header_fields',
-				'body': 'some_string_email_message___body',
-				'body_multipart': 'some_string_email_message___body_multipart',
-				'raw_email_ref': 'some_string_email_message___raw_email_ref'
-			},
-			'9': {
-				'type': 'endpoint',
-				'hostname': 'some_string_endpoint___hostname',
-				'device_id': 'some_string_endpoint___device_id',
-				'groups': 'some_string_endpoint___groups',
-				'group_ids': 'some_string_endpoint___group_ids',
-				'os_software_ref': 'some_string_endpoint___os_software_ref',
-				'agent_version': 'some_string_endpoint___agent_version',
-				'bios_manufacturer': 'some_string_endpoint___bios_manufacturer',
-				'bios_version': 'some_string_endpoint___bios_version',
-				'hardware_architecture': 'some_string_endpoint___hardware_architecture',
-				'public_ip_refs': 'some_string_endpoint___public_ip_refs',
-				'private_ip_refs': 'some_string_endpoint___private_ip_refs',
-				'first_seen': 'some_string_endpoint___first_seen',
-				'last_seen': 'some_string_endpoint___last_seen',
-				'mac_addresses': 'some_string_endpoint___mac_addresses',
-				'device_type': 'some_string_endpoint___device_type',
-				'service_provider_account_external_id': 'some_string_endpoint___service_provider_account_external_id'
-			},
-			'10': {
 				'type': 'file',
 				'extensions': 'some_string_file___extensions',
 				'hashes': 'some_string_file___hashes',
@@ -109,18 +50,13 @@
 				'mime_type': 'application/json',
 				'ctime': '1644597430670',
 				'mtime': '1644597430670',
-				'atime': '1644597430670',
-				'parent_directory_ref': 'some_string_file___parent_directory_ref',
-				'contains_refs': 'some_string_file___contains_refs',
-				'content_ref': 'some_string_file___content_ref'
+				'atime': '1644597430670'
 			},
-			'11': {
+			'5': {
 				'type': 'ipv4-addr',
-				'value': '192.168.2.1',
-				'resolves_to_refs': 'some_string_ipv4_addr___resolves_to_refs',
-				'belongs_to_refs': 'some_string_ipv4_addr___belongs_to_refs'
+				'value': '192.168.2.1'
 			},
-			'13': {
+			'7': {
 				'type': 'mac-addr',
 				'value': 'e7:1b:7f:df:73:7f'
 			}
