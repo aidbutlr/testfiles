@@ -1,6 +1,6 @@
 {
 	'type': 'bundle',
-	'id': 'bundle--99c9425e-f006-449e-ad0c-a9599e90755b',
+	'id': 'bundle--0a11f51f-27dd-4ba3-b67a-8d99d22f82f2',
 	'spec_version': '2.0',
 	'objects': [{
 		'type': 'identity',
@@ -10,11 +10,11 @@
 		'created': '2021-09-24T15:56:39.537Z',
 		'modified': '2021-09-24T15:56:39.537Z'
 	}, {
-		'id': 'observed-data--ca39dbbb-33ac-445d-926d-164d22b52ab6',
+		'id': 'observed-data--2454a52f-2995-4239-bd4f-c46b13de687f',
 		'type': 'observed-data',
 		'created_by_ref': 'identity--69ae6aa8-8b23-4653-806d-18a53aa1d5f8',
-		'created': '2022-02-14T17:38:26.786Z',
-		'modified': '2022-02-14T17:38:26.786Z',
+		'created': '2022-02-14T17:47:23.921Z',
+		'modified': '2022-02-14T17:47:23.921Z',
 		'objects': {
 			'0': {
 				'type': 'artifact',
@@ -41,22 +41,10 @@
 				'credibility': 1
 			},
 			'4': {
-				'type': 'file',
-				'extensions': 'some_string_file___extensions',
-				'hashes': 'some_string_file___hashes',
-				'name': 'cmd.exe',
-				'name_enc': 'some_string_file___name_enc',
-				'magic_number_hex': 'some_string_file___magic_number_hex',
-				'mime_type': 'application/json',
-				'ctime': '1644597430670',
-				'mtime': '1644597430670',
-				'atime': '1644597430670'
-			},
-			'5': {
 				'type': 'ipv4-addr',
 				'value': '192.168.2.1'
 			},
-			'7': {
+			'6': {
 				'type': 'mac-addr',
 				'value': 'e7:1b:7f:df:73:7f'
 			}
