@@ -47,6 +47,10 @@
 			'6': {
 				'type': 'mac-addr',
 				'value': 'e7:1b:7f:df:73:7f'
+			},
+			'7':{
+				'type': 'email-message',
+				'is_multipart': false				
 			}
 		},
 		'last_observed': '2022-02-11T16:37:10.669Z',
