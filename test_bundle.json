@@ -1,224 +1,600 @@
 {
   "type": "bundle",
-  "id": "bundle--258c4b63-6b04-4a0e-985d-f64a3a8c8ec7",
-  "spec_version": "2.0",
+  "id": "bundle--265eb098-c36f-4119-91e5-d7101d2a589f",
   "objects": [
     {
       "type": "identity",
-      "id": "identity--33fa3e56-6511-40de-bc69-c5ffeb3838f9",
-      "created": "2020-02-03T15:44:40.150Z",
-      "modified": "2020-02-03T15:44:40.150Z",
-      "name": "threat demo",
-      "identity_class": "program"
+      "id": "identity--69ae6aa8-8b23-4653-806d-18a53aa1d5f8",
+      "identity_class": "events",
+      "name": "qradar_data_lake",
+      "created": "2021-09-24T15:56:39.537Z",
+      "modified": "2021-09-24T15:56:39.537Z"
     },
     {
+      "id": "observed-data--dc6ce807-f26e-4d29-870f-27c5e851eab1",
       "type": "observed-data",
-      "id": "observed-data--ed82dd61-cc41-485b-b608-d278469e6259",
-      "created_by_ref": "identity--33fa3e56-6511-40de-bc69-c5ffeb3838f9",
-      "created": "2020-02-03T15:44:40.150Z",
-      "modified": "2020-02-03T15:44:40.150Z",
-      "first_observed": "2020-02-03T15:44:40.150Z",
-      "last_observed": "2020-02-03T15:44:40.150Z",
-      "number_observed": 1,
+      "created_by_ref": "identity--69ae6aa8-8b23-4653-806d-18a53aa1d5f8",
+      "created": "2023-03-06T15:03:00.689Z",
+      "modified": "2023-03-06T15:03:00.689Z",
       "objects": {
         "0": {
-          "type": "ipv4-addr",
-          "value": "68.109.83.22"
+          "type": "artifact",
+          "payload_bin": "http 2021-04-15T23:56:24.352573Z app/Test-ITeam-App-Load-Balancer/985adce610171e6b 10.213.44.208:60252 10.31.92.58:80 0.001 0.001 0.000 404 404 229 375 \"GET http://10.159.2.77:80/.env HTTP/1.1\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36\" - - arn:aws:elasticloadbalancing:us-east-1:769160150729:targetgroup/Test-Iteam-HTTP-Target/731252d7cf06c81c \"Root=1-6078d2a8-14aa3ad06db797b839e57dc2\" \"-\" \"-\" 0 2021-04-15T23:56:24.350000Z \"forward\" \"-\" \"-\" \"10.31.92.58:80\" \"404\" \"-\" \"-\"\n",
+          "hashes": {
+            "MD5": "",
+            "SHA_1": "",
+            "SHA_256": "",
+            "SHA_512": ""
+          },
+          "x_time_observed": "1969-12-31 23:59:59.999"
         },
         "1": {
-          "type": "ipv4-addr",
-          "value": "192.168.0.15"
+          "type": "x-ibm-finding",
+          "payload_size_bytes": "540",
+          "event_uuid": "00060327-c670-41bb-abbd-23d56f31f87f",
+          "event_type": "EVENT",
+          "truncated": 0,
+          "name": "http forward",
+          "target_data_source_identifier": "127.0.0.1",
+          "data_source_id": "fa769ceb-821c-4a23-a4bd-9239233af150",
+          "qid_data_source_type_id": 460,
+          "qid": "117000062",
+          "qid_event_id": "http forward",
+          "qid_event_category": "AmazonAWSALBAccessLogs",
+          "connector_id": "18446744073709551615",
+          "original_time": "2021-04-16 00:02:14.000",
+          "receive_time": "2023-03-03 15:19:29.600",
+          "parse_time": "2023-03-03 15:19:29.600",
+          "storage_time": "2023-03-03 15:19:29.612",
+          "update_time": "2023-03-03 15:19:29.600",
+          "data_source_type_id": 460,
+          "internal_account_id": "92b9c185-5f60-4bfc-ba0e-364fe6dcd088",
+          "credibility": 5,
+          "retention_bucket": 0,
+          "finding_id": "x-ibm-finding--00060327-c670-41bb-abbd-23d56f31f87f"
         },
         "2": {
-          "type": "url",
-          "value": "http://mihannevis.com/joes/NAZALgEyGj7b3jNYzbypYX8a/manifest.js"
+          "type": "autonomous-system",
+          "number": 65535,
+          "x_time_observed": "1969-12-31 23:59:59.999"
         },
         "3": {
-          "type": "url",
-          "value": "me-faccebook-tr.com"
+          "type": "directory",
+          "ctime": "1969-12-31T23:59:59.999Z",
+          "mtime": "1969-12-31T23:59:59.999Z",
+          "atime": "1969-12-31T23:59:59.999Z",
+          "x_time_observed": "1969-12-31 23:59:59.999"
         },
         "4": {
-          "type": "url",
-          "value": "http://kbfvzoboss.bid/alien/fre.php"
+          "type": "domain-name",
+          "x_time_observed": "1969-12-31 23:59:59.999"
         },
         "5": {
-          "type": "ipv4-addr",
-          "value": "45.128.134.14"
+          "type": "email-addr",
+          "x_time_observed": "1969-12-31 23:59:59.999"
         },
         "6": {
-          "type": "network-traffic",
-          "start": "2020-02-03T15:44:40.150Z",
-          "end": "2020-02-03T15:44:40.150Z",
-          "is_active": false,
-          "src_ref": "0",
-          "dst_ref": "1",
-          "src_port": 58767,
-          "dst_port": 443,
-          "protocols": [
-            "ip",
-            "tcp",
-            "tls"
-          ],
-          "src_byte_count": 125194360,
-          "dst_byte_count": 122956560
+          "type": "email-message",
+          "is_multipart": false,
+          "date": "1969-12-31T23:59:59.999Z",
+          "x_time_observed": "1969-12-31 23:59:59.999"
         },
         "7": {
-          "type": "url",
-          "value": "faceb00k-verify-account-dept.com"
+          "type": "x-ibm-endpoint",
+          "first_seen": "18446744073709551615",
+          "last_seen": "18446744073709551615",
+          "time_observed": "1969-12-31 23:59:59.999"
         },
         "8": {
-          "type": "url",
-          "value": "pb36hu4spl6cyjdfhing7h3pw6dhpk32ifemawkujj4gp33ejzdq3did.onion"
+          "type": "file",
+          "hashes": {
+            "MD5": "",
+            "SHA_1": "",
+            "SHA_256": "",
+            "SHA_512": ""
+          },
+          "size": 4294967295,
+          "ctime": "1969-12-31T23:59:59.999Z",
+          "mtime": "1969-12-31T23:59:59.999Z",
+          "atime": "1969-12-31T23:59:59.999Z",
+          "x_time_observed": "1969-12-31 23:59:59.999"
         },
         "9": {
-          "type": "file-hash",
-          "value": "9b27388be292aea50d62cfebd130a9832f0d676feb28771d70d3e30bdb117f3a"
+          "type": "ipv4-addr",
+          "value": "0.0.0.0",
+          "x_time_observed": "1969-12-31 23:59:59.999"
         },
         "10": {
-          "type": "url",
-          "value": "http://www.awsyscloud.com"
+          "type": "ipv6-addr",
+          "value": "::",
+          "x_time_observed": "1969-12-31 23:59:59.999"
         },
         "11": {
-          "type": "ipv4-addr",
-          "value": "67.229.97.229"
+          "type": "mac-addr",
+          "x_time_observed": "1969-12-31 23:59:59.999"
         },
         "12": {
-          "type": "file-hash",
-          "value": "26a196afc8e6aff6fc6c46734bf228cb"
+          "type": "mutex",
+          "x_time_observed": "1969-12-31 23:59:59.999"
         },
         "13": {
-          "type": "url",
-          "value": "agegamepay.com"
+          "type": "network-traffic",
+          "id": "network-traffic--d248d199-c674-5f50-9cc1-dcb88951d20b",
+          "start": "18446744073709551615Z",
+          "end": "18446744073709551615Z",
+          "src_ref": "ipv4-addr--1c821721-92a0-5fc8-acf1-cae972785d90",
+          "dst_ref": "ipv4-addr--024318ee-235c-5851-b62c-51a4da14a448",
+          "src_port": 60252,
+          "dst_port": 80,
+          "protocols": [
+            "http"
+          ],
+          "src_byte_count": "375",
+          "dst_byte_count": "229",
+          "src_packets": 4294967295,
+          "dst_packets": 4294967295,
+          "x_pre_nat_src_port": 4294967295,
+          "x_post_nat_src_port": 4294967295,
+          "x_pre_nat_dst_port": 4294967295,
+          "x_post_nat_dst_port": 4294967295,
+          "x_time_observed": "2023-03-03 15:19:29.600"
         },
         "14": {
-          "type": "file-hash",
-          "value": "2862c9bff365dc8d51ba0c4953869d5d"
+          "type": "process",
+          "pid": 4294967295,
+          "created_time": "1969-12-31T23:59:59.999Z",
+          "x_time_observed": "1969-12-31 23:59:59.999"
         },
         "15": {
-          "type": "url",
-          "value": "http://67.229.97.229/pass_sqzr.jsp"
+          "type": "software",
+          "x_time_observed": "1969-12-31 23:59:59.999"
         },
         "16": {
-          "type": "ipv4-addr",
-          "value": "119.28.139.120"
+          "type": "url",
+          "id": "url--0156cc5e-747a-5769-9371-c769b69b88de",
+          "value": "http://10.159.2.77:80/.env",
+          "x_time_observed": "2023-03-03 15:19:29.600"
         },
         "17": {
-          "type": "ipv4-addr",
-          "value": "119.28.139.20"
+          "type": "user-account",
+          "account_created": "18446744073709551615Z",
+          "account_expired": "18446744073709551615Z",
+          "credential_last_changed": "18446744073709551615Z",
+          "account_first_login": "18446744073709551615Z",
+          "account_last_login": "18446744073709551615Z",
+          "x_time_observed": "1969-12-31 23:59:59.999"
         },
         "18": {
-          "type": "ipv4-addr",
-          "value": "66.42.98.220"
+          "type": "windows-registry-key",
+          "value": {
+            "name": "",
+            "data": "",
+            "data_type": "REG_NONE"
+          },
+          "modified_time": "1969-12-31T23:59:59.999Z",
+          "number_of_sub_keys": 4294967295,
+          "x_time_observed": "1969-12-31 23:59:59.999"
         },
         "19": {
-          "type": "file-hash",
-          "value": "493574e9b1cc618b1a967ba9dabec474bb239777a3d81c11e49e7bb9c71c0c4e"
+          "type": "x509-certificate",
+          "hashes": {
+            "MD5": "",
+            "SHA_1": "",
+            "SHA_256": "",
+            "SHA_512": ""
+          },
+          "validity_not_before": "18446744073709551615Z",
+          "validity_not_after": "18446744073709551615Z",
+          "subject_public_key_exponent": 4294967295,
+          "x_time_observed": "1969-12-31 23:59:59.999"
         },
         "20": {
-          "type": "file-hash",
-          "value": "6943fbb194317d344ca9911b7abb11b684d3dca4c29adcbcff39291822902167"
+          "type": "x-response",
+          "timestamp": "1969-12-31 23:59:59.999"
         },
         "21": {
-          "type": "file-hash",
-          "value": "85297097f6dbe8a52974a43016425d4adaa61f3bdb5fcdd186bfda2255d56b3d"
+          "type": "x-enrichment",
+          "timestamp": "1969-12-31 23:59:59.999"
         },
         "22": {
-          "type": "file-hash",
-          "value": "99c5dbeb545af3ef1f0f9643449015988c4e02bf8a7164b5d6c86f67e6dc2d28"
-        },
-        "23": {
-          "type": "url",
-          "value": "exchange.longmusic.com"
-        },
-        "24": {
-          "type": "url",
-          "value": "alibaba.zzux.com"
-        },
-        "25": {
-          "type": "url",
-          "value": "office365-management.net"
-        },
-        "26": {
-          "type": "file-hash",
-          "value": "75e49120a0238749827196cebb7559a37a2422f8"
-        },
-        "27": {
-          "type": "file-hash",
-          "value": "b06dc2342230b7ad67d9f18589bca482263c0a0ef4876cc141e3afcc09a47dc8"
-        },
-        "28": {
-          "type": "file-hash",
-          "value": "c2a88cc3418b488d212b36172b089b0d329fa6e4a094583b757fdd3c5398efe1"
-        },
-        "29": {
-          "type": "url",
-          "value": "sophosdefence.com"
-        },
-        "30": {
-          "type": "ipv4-addr",
-          "value": "220.202.152.47"
-        },
-        "31": {
-          "type": "file-hash",
-          "value": "d18330c627f034226bfa2fcd5a38748496c3ae9b9877aadd763ead65a7c1bbd3"
-        },
-        "32": {
-          "type": "file-hash",
-          "value": "9b5be5ce331e1300b36b6929901d8bfccd2fdaa44382b9ef3695779d5fa21b06"
-        },
-        "33": {
-          "type": "file-hash",
-          "value": "bfeb6efee4891de135431091079e659631376953a46065f7e44335df10d16425"
-        },
-        "34": {
-          "type": "file-hash",
-          "value": "87bfbbc345b4f3a59cf90f46b47fc063adcd415614afe4af7afc950a0dfcacc2"
-        },
-        "35": {
-          "type": "file-hash",
-          "value": "4a30275f14f80c6e11d5a253d7d004eda98651010e0aa47f744cf4105d1676ab"
-        },
-        "36": {
-          "type": "url",
-          "value": "sophosdefence1.com"
-        },
-        "37": {
-          "type": "url",
-          "value": "odsakjmdnhsaj.com"
-        },
-        "38": {
-          "type": "url",
-          "value": "simplifiedhomesales.com"
-        },
-        "39": {
-          "type": "file-hash",
-          "value": "203fed7435fb3f8428e57c798b17f30c4eba7b649c0ebf842cbba39499817739"
-        },
-        "40": {
-          "type": "url",
-          "value": "mytest.com"
-        },
-        "41": {
-          "type": "file-hash",
-          "value": "240fe01d9fcce5aae311e906b8311a1975f8c1431b83618f3d11aeaff10aede3"
-        },
-        "42": {
-          "type": "url",
-          "value": "chckl.co.uk"
-        },
-        "43": {
-          "type": "url",
-          "value": "idbrokerwebex.com"
-        },
-        "44": {
-          "type": "ip",
-          "value": "185.250.151.72"
-        },
-        "45": {
-          "type": "file-hash",
-          "value": "65149e036fff06026d80ac9ad4d156332822dc93142cf1a122b1841ec8de34b5"
+          "type": "x-correlation",
+          "timestamp": "1969-12-31 23:59:59.999"
         }
-      }
+      },
+      "first_observed": "2023-03-06T15:03:00.689Z",
+      "last_observed": "2023-03-06T15:03:00.689Z",
+      "number_observed": 1
+    },
+    {
+      "id": "observed-data--c4a08275-e916-4871-bc95-c0dbcb551383",
+      "type": "observed-data",
+      "created_by_ref": "identity--69ae6aa8-8b23-4653-806d-18a53aa1d5f8",
+      "created": "2023-03-06T15:03:00.691Z",
+      "modified": "2023-03-06T15:03:00.691Z",
+      "objects": {
+        "0": {
+          "type": "artifact",
+          "payload_bin": "http 2021-04-15T23:56:25.689064Z app/Test-ITeam-App-Load-Balancer/985adce610171e6b 10.213.44.208:54608 10.31.92.58:80 0.000 0.001 0.000 200 200 315 263 \"POST http://10.159.2.77:80/ HTTP/1.1\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36\" - - arn:aws:elasticloadbalancing:us-east-1:769160150729:targetgroup/Test-Iteam-HTTP-Target/731252d7cf06c81c \"Root=1-6078d2a9-168f012d7da65fe72e28fc15\" \"-\" \"-\" 0 2021-04-15T23:56:25.687000Z \"forward\" \"-\" \"-\" \"10.31.92.58:80\" \"200\" \"-\" \"-\"\n",
+          "hashes": {
+            "MD5": "",
+            "SHA_1": "",
+            "SHA_256": "",
+            "SHA_512": ""
+          },
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "1": {
+          "type": "x-ibm-finding",
+          "payload_size_bytes": "537",
+          "event_uuid": "0010e0ab-5b08-4536-86a3-4eadc52729d1",
+          "event_type": "EVENT",
+          "truncated": 0,
+          "name": "http forward",
+          "target_data_source_identifier": "127.0.0.1",
+          "data_source_id": "fa769ceb-821c-4a23-a4bd-9239233af150",
+          "qid_data_source_type_id": 460,
+          "qid": "117000062",
+          "qid_event_id": "http forward",
+          "qid_event_category": "AmazonAWSALBAccessLogs",
+          "connector_id": "18446744073709551615",
+          "original_time": "2021-04-16 00:07:52.000",
+          "receive_time": "2023-03-03 15:25:50.098",
+          "parse_time": "2023-03-03 15:25:50.099",
+          "storage_time": "2023-03-03 15:25:50.110",
+          "update_time": "2023-03-03 15:25:50.099",
+          "data_source_type_id": 460,
+          "internal_account_id": "92b9c185-5f60-4bfc-ba0e-364fe6dcd088",
+          "credibility": 5,
+          "retention_bucket": 0,
+          "finding_id": "x-ibm-finding--0010e0ab-5b08-4536-86a3-4eadc52729d1"
+        },
+        "2": {
+          "type": "autonomous-system",
+          "number": 65535,
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "3": {
+          "type": "directory",
+          "ctime": "1969-12-31T23:59:59.999Z",
+          "mtime": "1969-12-31T23:59:59.999Z",
+          "atime": "1969-12-31T23:59:59.999Z",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "4": {
+          "type": "domain-name",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "5": {
+          "type": "email-addr",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "6": {
+          "type": "email-message",
+          "is_multipart": false,
+          "date": "1969-12-31T23:59:59.999Z",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "7": {
+          "type": "x-ibm-endpoint",
+          "first_seen": "18446744073709551615",
+          "last_seen": "18446744073709551615",
+          "time_observed": "1969-12-31 23:59:59.999"
+        },
+        "8": {
+          "type": "file",
+          "hashes": {
+            "MD5": "",
+            "SHA_1": "",
+            "SHA_256": "",
+            "SHA_512": ""
+          },
+          "size": 4294967295,
+          "ctime": "1969-12-31T23:59:59.999Z",
+          "mtime": "1969-12-31T23:59:59.999Z",
+          "atime": "1969-12-31T23:59:59.999Z",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "9": {
+          "type": "ipv4-addr",
+          "value": "0.0.0.0",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "10": {
+          "type": "ipv6-addr",
+          "value": "::",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "11": {
+          "type": "mac-addr",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "12": {
+          "type": "mutex",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "13": {
+          "type": "network-traffic",
+          "id": "network-traffic--80e00fbf-a02d-572c-8fda-8e4a061a1860",
+          "start": "18446744073709551615Z",
+          "end": "18446744073709551615Z",
+          "src_ref": "ipv4-addr--1c821721-92a0-5fc8-acf1-cae972785d90",
+          "dst_ref": "ipv4-addr--024318ee-235c-5851-b62c-51a4da14a448",
+          "src_port": 54608,
+          "dst_port": 80,
+          "protocols": [
+            "http"
+          ],
+          "src_byte_count": "263",
+          "dst_byte_count": "315",
+          "src_packets": 4294967295,
+          "dst_packets": 4294967295,
+          "x_pre_nat_src_port": 4294967295,
+          "x_post_nat_src_port": 4294967295,
+          "x_pre_nat_dst_port": 4294967295,
+          "x_post_nat_dst_port": 4294967295,
+          "x_time_observed": "2023-03-03 15:25:50.099"
+        },
+        "14": {
+          "type": "process",
+          "pid": 4294967295,
+          "created_time": "1969-12-31T23:59:59.999Z",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "15": {
+          "type": "software",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "16": {
+          "type": "url",
+          "id": "url--ce7d4cf2-7287-5f7c-97cc-91d79897fa27",
+          "value": "http://10.159.2.77:80/",
+          "x_time_observed": "2023-03-03 15:25:50.099"
+        },
+        "17": {
+          "type": "user-account",
+          "account_created": "18446744073709551615Z",
+          "account_expired": "18446744073709551615Z",
+          "credential_last_changed": "18446744073709551615Z",
+          "account_first_login": "18446744073709551615Z",
+          "account_last_login": "18446744073709551615Z",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "18": {
+          "type": "windows-registry-key",
+          "value": {
+            "name": "",
+            "data": "",
+            "data_type": "REG_NONE"
+          },
+          "modified_time": "1969-12-31T23:59:59.999Z",
+          "number_of_sub_keys": 4294967295,
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "19": {
+          "type": "x509-certificate",
+          "hashes": {
+            "MD5": "",
+            "SHA_1": "",
+            "SHA_256": "",
+            "SHA_512": ""
+          },
+          "validity_not_before": "18446744073709551615Z",
+          "validity_not_after": "18446744073709551615Z",
+          "subject_public_key_exponent": 4294967295,
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "20": {
+          "type": "x-response",
+          "timestamp": "1969-12-31 23:59:59.999"
+        },
+        "21": {
+          "type": "x-enrichment",
+          "timestamp": "1969-12-31 23:59:59.999"
+        },
+        "22": {
+          "type": "x-correlation",
+          "timestamp": "1969-12-31 23:59:59.999"
+        }
+      },
+      "first_observed": "2023-03-06T15:03:00.691Z",
+      "last_observed": "2023-03-06T15:03:00.691Z",
+      "number_observed": 1
+    },
+    {
+      "id": "observed-data--2938e8c4-7812-418e-b721-acf55182d611",
+      "type": "observed-data",
+      "created_by_ref": "identity--69ae6aa8-8b23-4653-806d-18a53aa1d5f8",
+      "created": "2023-03-06T15:03:00.692Z",
+      "modified": "2023-03-06T15:03:00.692Z",
+      "objects": {
+        "0": {
+          "type": "artifact",
+          "payload_bin": "h2 2021-02-22T15:03:58.507038Z app/Test-Iteam-HTTPS-Load-Balancer/551dedc550b9894c 10.47.133.6:10000 10.140.171.246:30087 0.001 0.005 0.000 200 200 26 384 \"GET https://one.ex.example.test:443/graylog/api/ HTTP/2.0\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36\" ECDHE-RSA-AES128-GCM-SHA256 TLSv1.2 arn:aws:elasticloadbalancing:eu-central-1:668735561153:targetgroup/ingress-ss-live-eu/3dd9de99092b06ac \"Root=1-6033c7de-0e97b2084719cb3e1ceafdfa\" \"one.ex.example.test\" \"arn:aws:acm:eu-central-1:668735561153:certificate/a2f9453a-c0f9-4403-b5ef-a5f9a403075e\" 0 2021-02-22T15:03:58.500000Z \"forward\" \"-\" \"-\" \"10.140.171.246:30087\" \"200\" \"-\" \"-\"\n",
+          "hashes": {
+            "MD5": "",
+            "SHA_1": "",
+            "SHA_256": "",
+            "SHA_512": ""
+          },
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "1": {
+          "type": "x-ibm-finding",
+          "payload_size_bytes": "711",
+          "event_uuid": "00132309-02cd-4464-b02d-37eceba3266c",
+          "event_type": "EVENT",
+          "truncated": 0,
+          "name": "h2 forward",
+          "target_data_source_identifier": "127.0.0.1",
+          "data_source_id": "fa769ceb-821c-4a23-a4bd-9239233af150",
+          "qid_data_source_type_id": 460,
+          "qid": "117000057",
+          "qid_event_id": "h2 forward",
+          "qid_event_category": "AmazonAWSALBAccessLogs",
+          "connector_id": "18446744073709551615",
+          "original_time": "2021-02-22 15:12:18.000",
+          "receive_time": "2023-03-03 15:28:44.858",
+          "parse_time": "2023-03-03 15:28:44.858",
+          "storage_time": "2023-03-03 15:28:44.869",
+          "update_time": "2023-03-03 15:28:44.858",
+          "data_source_type_id": 460,
+          "internal_account_id": "92b9c185-5f60-4bfc-ba0e-364fe6dcd088",
+          "credibility": 5,
+          "retention_bucket": 0,
+          "finding_id": "x-ibm-finding--00132309-02cd-4464-b02d-37eceba3266c"
+        },
+        "2": {
+          "type": "autonomous-system",
+          "number": 65535,
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "3": {
+          "type": "directory",
+          "ctime": "1969-12-31T23:59:59.999Z",
+          "mtime": "1969-12-31T23:59:59.999Z",
+          "atime": "1969-12-31T23:59:59.999Z",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "4": {
+          "type": "domain-name",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "5": {
+          "type": "email-addr",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "6": {
+          "type": "email-message",
+          "is_multipart": false,
+          "date": "1969-12-31T23:59:59.999Z",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "7": {
+          "type": "x-ibm-endpoint",
+          "first_seen": "18446744073709551615",
+          "last_seen": "18446744073709551615",
+          "time_observed": "1969-12-31 23:59:59.999"
+        },
+        "8": {
+          "type": "file",
+          "hashes": {
+            "MD5": "",
+            "SHA_1": "",
+            "SHA_256": "",
+            "SHA_512": ""
+          },
+          "size": 4294967295,
+          "ctime": "1969-12-31T23:59:59.999Z",
+          "mtime": "1969-12-31T23:59:59.999Z",
+          "atime": "1969-12-31T23:59:59.999Z",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "9": {
+          "type": "ipv4-addr",
+          "value": "0.0.0.0",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "10": {
+          "type": "ipv6-addr",
+          "value": "::",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "11": {
+          "type": "mac-addr",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "12": {
+          "type": "mutex",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "13": {
+          "type": "network-traffic",
+          "id": "network-traffic--64d01050-5384-592d-a125-b646d3c9e86b",
+          "start": "18446744073709551615Z",
+          "end": "18446744073709551615Z",
+          "src_ref": "ipv4-addr--114a35f7-3fb0-50eb-a024-cb527d55b1d8",
+          "dst_ref": "ipv4-addr--e111871a-246b-5b53-9461-b8bd844876eb",
+          "src_port": 10000,
+          "dst_port": 30087,
+          "protocols": [
+            "https"
+          ],
+          "src_byte_count": "384",
+          "dst_byte_count": "26",
+          "src_packets": 4294967295,
+          "dst_packets": 4294967295,
+          "x_pre_nat_src_port": 4294967295,
+          "x_post_nat_src_port": 4294967295,
+          "x_pre_nat_dst_port": 4294967295,
+          "x_post_nat_dst_port": 4294967295,
+          "x_time_observed": "2023-03-03 15:28:44.858"
+        },
+        "14": {
+          "type": "process",
+          "pid": 4294967295,
+          "created_time": "1969-12-31T23:59:59.999Z",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "15": {
+          "type": "software",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "16": {
+          "type": "url",
+          "id": "url--23d4da65-97f1-5d7c-a578-fc8d240ed62b",
+          "value": "https://one.ex.example.test:443/graylog/api/",
+          "x_time_observed": "2023-03-03 15:28:44.858"
+        },
+        "17": {
+          "type": "user-account",
+          "account_created": "18446744073709551615Z",
+          "account_expired": "18446744073709551615Z",
+          "credential_last_changed": "18446744073709551615Z",
+          "account_first_login": "18446744073709551615Z",
+          "account_last_login": "18446744073709551615Z",
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "18": {
+          "type": "windows-registry-key",
+          "value": {
+            "name": "",
+            "data": "",
+            "data_type": "REG_NONE"
+          },
+          "modified_time": "1969-12-31T23:59:59.999Z",
+          "number_of_sub_keys": 4294967295,
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "19": {
+          "type": "x509-certificate",
+          "hashes": {
+            "MD5": "",
+            "SHA_1": "",
+            "SHA_256": "",
+            "SHA_512": ""
+          },
+          "validity_not_before": "18446744073709551615Z",
+          "validity_not_after": "18446744073709551615Z",
+          "subject_public_key_exponent": 4294967295,
+          "x_time_observed": "1969-12-31 23:59:59.999"
+        },
+        "20": {
+          "type": "x-response",
+          "timestamp": "1969-12-31 23:59:59.999"
+        },
+        "21": {
+          "type": "x-enrichment",
+          "timestamp": "1969-12-31 23:59:59.999"
+        },
+        "22": {
+          "type": "x-correlation",
+          "timestamp": "1969-12-31 23:59:59.999"
+        }
+      },
+      "first_observed": "2023-03-06T15:03:00.692Z",
+      "last_observed": "2023-03-06T15:03:00.692Z",
+      "number_observed": 1
     }
-  ]
+  ],
+  "spec_version": "2.0"
 }
