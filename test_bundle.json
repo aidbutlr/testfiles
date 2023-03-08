@@ -1,6 +1,6 @@
 {
   "type": "bundle",
-  "id": "bundle--63005e63-986d-459a-9d70-d9a2e8b8ea6c",
+  "id": "bundle--bd5df8b8-4750-4210-833e-653150f7413c",
   "objects": [
     {
       "type": "identity",
@@ -11,26 +11,16 @@
       "modified": "2021-09-24T15:56:39.537Z"
     },
     {
-      "id": "observed-data--104000da-d2f1-4d2e-bb33-a2400401293d",
+      "id": "observed-data--1b450639-c70b-4380-9fb4-ad9ec7bdcfd0",
       "type": "observed-data",
       "created_by_ref": "identity--69ae6aa8-8b23-4653-806d-18a53aa1d5f8",
-      "created": "2023-03-06T15:49:08.440Z",
-      "modified": "2023-03-06T15:49:08.440Z",
+      "created": "2023-03-08T09:58:21.856Z",
+      "modified": "2023-03-08T09:58:21.856Z",
       "objects": {
         "0": {
-          "type": "artifact",
-          "payload_bin": "http 2021-04-15T23:56:24.352573Z app/Test-ITeam-App-Load-Balancer/985adce610171e6b 10.213.44.208:60252 10.31.92.58:80 0.001 0.001 0.000 404 404 229 375 \"GET http://10.159.2.77:80/.env HTTP/1.1\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36\" - - arn:aws:elasticloadbalancing:us-east-1:769160150729:targetgroup/Test-Iteam-HTTP-Target/731252d7cf06c81c \"Root=1-6078d2a8-14aa3ad06db797b839e57dc2\" \"-\" \"-\" 0 2021-04-15T23:56:24.350000Z \"forward\" \"-\" \"-\" \"10.31.92.58:80\" \"404\" \"-\" \"-\"\n",
-          "hashes": {
-            "MD5": "",
-            "SHA_1": "",
-            "SHA_256": "",
-            "SHA_512": ""
-          },
-          "x_time_observed": "1969-12-31 23:59:59.999"
-        },
-        "1": {
           "type": "x-ibm-finding",
-          "payload_size_bytes": "540",
+          "payload": "http 2021-04-15T23:56:24.352573Z app/Test-ITeam-App-Load-Balancer/985adce610171e6b 10.213.44.208:60252 10.31.92.58:80 0.001 0.001 0.000 404 404 229 375 \"GET http://10.159.2.77:80/.env HTTP/1.1\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36\" - - arn:aws:elasticloadbalancing:us-east-1:769160150729:targetgroup/Test-Iteam-HTTP-Target/731252d7cf06c81c \"Root=1-6078d2a8-14aa3ad06db797b839e57dc2\" \"-\" \"-\" 0 2021-04-15T23:56:24.350000Z \"forward\" \"-\" \"-\" \"10.31.92.58:80\" \"404\" \"-\" \"-\"\n",
+          "payload_size_bytes": 540,
           "event_uuid": "00060327-c670-41bb-abbd-23d56f31f87f",
           "event_type": "EVENT",
           "truncated": 0,
@@ -38,10 +28,10 @@
           "target_data_source_identifier": "127.0.0.1",
           "data_source_id": "fa769ceb-821c-4a23-a4bd-9239233af150",
           "qid_data_source_type_id": 460,
-          "qid": "117000062",
+          "qid": 117000062,
           "qid_event_id": "http forward",
           "qid_event_category": "AmazonAWSALBAccessLogs",
-          "connector_id": "18446744073709551615",
+          "connector_id": 18446744073709551615,
           "original_time": "2021-04-16 00:02:14.000",
           "receive_time": "2023-03-03 15:19:29.600",
           "parse_time": "2023-03-03 15:19:29.600",
@@ -53,15 +43,39 @@
           "retention_bucket": 0,
           "finding_id": "x-ibm-finding--00060327-c670-41bb-abbd-23d56f31f87f"
         },
-        "7": {
-          "type": "x-ibm-endpoint",
-          "first_seen": "18446744073709551615",
-          "last_seen": "18446744073709551615",
-          "time_observed": "1969-12-31 23:59:59.999"
+        "1": {
+          "type": "network-traffic",
+          "src_ref": "3",
+          "dst_ref": "4",
+          "src_port": 60252,
+          "dst_port": 80,
+          "protocols": [
+            "http"
+          ],
+          "src_byte_count": 375,
+          "dst_byte_count": 229,
+          "x_time_observed": "2023-03-03 15:19:29.600"
+        },
+        "2": {
+          "type": "url",
+          "value": "http://10.159.2.77:80/.env",
+          "x_time_observed": "2023-03-03 15:19:29.600"
+        },
+        "3": {
+          "type": "ipv4-addr",
+          "value": "10.213.44.208",
+          "x_context": "Source",
+          "x_time_observed": "2023-03-03 15:19:29.600"
+        },
+        "4": {
+          "type": "ipv4-addr",
+          "value": "10.31.92.58",
+          "x_context": "Destination",
+          "x_time_observed": "2023-03-03 15:19:29.600"
         }
       },
-      "first_observed": "2023-03-06T15:49:08.440Z",
-      "last_observed": "2023-03-06T15:49:08.440Z",
+      "first_observed": "2023-03-08T09:58:21.856Z",
+      "last_observed": "2023-03-08T09:58:21.856Z",
       "number_observed": 1
     }
   ],
