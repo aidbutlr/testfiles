@@ -30,6 +30,15 @@
           "internal_account_id": "92b9c185-5f60-4bfc-ba0e-364fe6dcd088",
           "credibility": 5,
           "retention_bucket": 0,
+          "event_uuid": "00060327-c670-41bb-abbd-23d56f31f87f",
+          "event_type": "EVENT",
+          "truncated": 0,
+          "name": "http forward",
+          "target_data_source_identifier": "127.0.0.1",
+          "data_source_id": "fa769ceb-821c-4a23-a4bd-9239233af150",
+          "qid_data_source_type_id": 460,
+          "qid_event_id": "http forward",
+          "qid_event_category": "AmazonAWSALBAccessLogs",
           "finding_id": "x-ibm-finding--00060327-c670-41bb-abbd-23d56f31f87f"
         },
         "1": {
