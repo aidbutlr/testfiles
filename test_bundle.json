@@ -40,6 +40,7 @@
           "qid_event_id": "http forward",
           "qid_event_category": "AmazonAWSALBAccessLogs",
           "connector_id": 18446744073709551615,
+          "qid": 117000062,
           "finding_id": "x-ibm-finding--00060327-c670-41bb-abbd-23d56f31f87f"
         },
         "1": {
