@@ -21,6 +21,15 @@
           "type": "x-ibm-finding",
           "payload": "http 2021-04-15T23:56:24.352573Z app/Test-ITeam-App-Load-Balancer/985adce610171e6b 10.213.44.208:60252 10.31.92.58:80 0.001 0.001 0.000 404 404 229 375 \"GET http://10.159.2.77:80/.env HTTP/1.1\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36\" - - arn:aws:elasticloadbalancing:us-east-1:769160150729:targetgroup/Test-Iteam-HTTP-Target/731252d7cf06c81c \"Root=1-6078d2a8-14aa3ad06db797b839e57dc2\" \"-\" \"-\" 0 2021-04-15T23:56:24.350000Z \"forward\" \"-\" \"-\" \"10.31.92.58:80\" \"404\" \"-\" \"-\"\n",
           "payload_size_bytes": 540,
+          "original_time": "2021-04-16 00:02:14.000",
+          "receive_time": "2023-03-03 15:19:29.600",
+          "parse_time": "2023-03-03 15:19:29.600",
+          "storage_time": "2023-03-03 15:19:29.612",
+          "update_time": "2023-03-03 15:19:29.600",
+          "data_source_type_id": 460,
+          "internal_account_id": "92b9c185-5f60-4bfc-ba0e-364fe6dcd088",
+          "credibility": 5,
+          "retention_bucket": 0,
           "finding_id": "x-ibm-finding--00060327-c670-41bb-abbd-23d56f31f87f"
         },
         "1": {
