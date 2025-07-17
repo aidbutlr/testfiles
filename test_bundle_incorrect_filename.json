@@ -51307,6 +51307,11 @@
                 "7": {
                     "type": "directory",
                     "path": "c:\\Program Files\\QRadar"
+                },
+                "8": {
+                  "type": "windows-registry-key",
+                  "key": "some_key",
+                  "values": [{"name":"val1","data": "some_data"}]
                 }
             },
             "x_ibm_ariel": {
