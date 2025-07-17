@@ -51299,7 +51299,7 @@
                 },
                 "6": {
                     "type": "file",
-                    "name": "{uat_file.exe}",
+                    "name": "{test\\uat_file.exe}",
                     "hashes": {
                         "SHA-256": "b0ab7076b0fe4b758d8e6622605d94204cc1b55baf718129cafe750d835ffb21"
                     }
