@@ -51310,7 +51310,8 @@
                 },
                 "8": {
                   "type": "windows-registry-key",
-                  "key": "some_key"
+                  "key": "some_key",
+                  "values": [{"name":"val1","data": "some_data"}]
                 }
             },
             "x_ibm_ariel": {
